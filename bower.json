@@ -1,0 +1,20 @@
+{
+  "name": "webmagazine",
+  "homepage": "https://github.com/novareto/webmagazine",
+  "authors": [
+    "Christian Klinger <ck@novareto.de>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
