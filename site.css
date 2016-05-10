@@ -6853,14 +6853,7 @@ div.card-main {
 .card-main {
   border-top: 6px solid #093999;
 }
-.card-portlet {
-  border-top: 6px solid #2DCFFA;
-  background-color: #F1F1F1;
-}
-.card-event {
-  background-color: #E5E3E3;
-}
-.editorial {
+.card-editorial {
   border-top: 6px solid #2DCFFA;
 }
 .topthema {
@@ -6869,7 +6862,14 @@ div.card-main {
 .thema {
   border-top: 6px solid #093999;
 }
-.card-event:hover {
+.card-portlet {
+  border-top: 6px solid #2DCFFA;
+  background-color: #F1F1F1;
+}
+.card-grau {
+  background-color: #F1F1F1;
+}
+.card-grau:hover {
   background: #f4f4f4;
   /* Old browsers */
   background: -moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 55%, #e5e3e3 99%);
@@ -6881,66 +6881,14 @@ div.card-main {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#e5e3e3', GradientType=0);
   /* IE6-9 */
 }
-.card-contact {
-  background-color: #BDD0C8;
+.card-blue {
+  background-color: rgba(0, 149, 219, 0.1);
 }
-.card-contact:hover {
-  background: #c7dbd5;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #c7dbd5 0%, #c9ddd4 55%, #bdd0c8 99%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #c7dbd5 0%, #c9ddd4 55%, #bdd0c8 99%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #c7dbd5 0%, #c9ddd4 55%, #bdd0c8 99%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7dbd5', endColorstr='#bdd0c8', GradientType=0);
-  /* IE6-9 */
+.card-orange {
+  background-color: rgba(243, 146, 0, 0.2);
 }
-.card-thema {
-  background-color: #F2DFCB;
-}
-.card-thema:hover {
-  background: #f9e1d1;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f9e1d1 0%, #f4e0cd 55%, #f2dfcb 99%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f9e1d1 0%, #f4e0cd 55%, #f2dfcb 99%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f9e1d1 0%, #f4e0cd 55%, #f2dfcb 99%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9e1d1', endColorstr='#f2dfcb', GradientType=0);
-  /* IE6-9 */
-}
-.row-bottom-margin {
-  margin-bottom: 8px;
-}
-.title-border {
-  height: 6px;
-  width: 80px;
-}
-.line-yellow {
-  background-color: #F8FF02;
-}
-.line-green {
-  background-color: #12DD5F;
-}
-.line-white {
-  background-color: #FFF;
-}
-div.description {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  background-color: white;
-  color: #093999;
-  opacity: 0.6;
-  /* transparency */
-  filter: alpha(opacity=60);
-  /* IE transparency */
-}
-.description_content {
-  padding: 10px;
+.card-gelb {
+  background-color: rgba(255, 204, 0, 0.1);
 }
 .card-hover:last-child {
   border-bottom: 0px solid #FFF;
@@ -6959,6 +6907,37 @@ div.description {
 .card-portlet-teaser:hover,
 .card-hover:hover {
   background: #f6f6f6;
+}
+.line-blue {
+  background-color: #093999;
+}
+.line-white {
+  background-color: #FFF;
+}
+.line-cyan {
+  background-color: #0095db;
+}
+.row-bottom-margin {
+  margin-bottom: 8px;
+}
+.title-border {
+  height: 6px;
+  width: 80px;
+}
+div.description {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  color: #093999;
+  opacity: 0.6;
+  /* transparency */
+  filter: alpha(opacity=60);
+  /* IE transparency */
+}
+.description_content {
+  padding: 10px;
 }
 .col-sm-3,
 .col-sm-4,
