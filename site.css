@@ -6750,6 +6750,10 @@ html {
 }
 body {
   margin-bottom: 80px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .footer {
   position: absolute;
@@ -6790,10 +6794,23 @@ body > .cards-wrapper {
   .ivz {
     border-bottom: 0;
   }
+  .row-bottom-margin {
+    margin-bottom: 0px !important;
+  }
+  .col-xs-6,
+  .col-xs-12 {
+    margin-bottom: 8px;
+  }
 }
 @media only screen and (min-width: 48em) {
   .ivz-navi {
     padding-bottom: 10px;
+  }
+  .media-right {
+    display: block;
+  }
+  .cards-wrapper {
+    padding-top: 180px !important;
   }
 }
 .container .text-muted {
@@ -6821,6 +6838,10 @@ button.collapsed {
 }
 .event-time {
   font-size: 24px;
+}
+.visual-heading,
+.visual-text {
+  z-index: 999;
 }
 .visual-heading:before {
   content: "Top Thema";
@@ -6853,18 +6874,82 @@ div.card-main {
 .card-main {
   border-top: 6px solid #093999;
 }
-.card-editorial {
+.editorial {
   border-top: 6px solid #2DCFFA;
+  padding-top: 10px;
 }
 .topthema {
+  border-top: 6px solid #093999;
+  padding-top: 10px;
+}
+.meldungen {
+  border-top: 6px solid #f39200;
+  padding-top: 10px;
+}
+.interview {
   border-top: 6px solid #F8FF02;
+  padding-top: 10px;
 }
 .thema {
   border-top: 6px solid #093999;
 }
+div.description {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  color: #093999;
+  opacity: 0.6;
+  /* transparency */
+  filter: alpha(opacity=60);
+  /* IE transparency */
+  padding: 10px 10px 0 10px;
+}
+a.description-content {
+  padding: 10px;
+  color: #000;
+}
+.cards h1,
+.cards h2,
+.cards h3,
+.cards h4 {
+  padding: 0 10px;
+  word-break: break-word;
+}
+.cards p,
+.cards blockquote,
+.cards ul {
+  padding: 10px 10px 0 10px;
+}
+.cards p,
+.cards cite {
+  color: #000;
+}
+.cards h1,
+.cards h1.media-heading {
+  color: #000;
+}
+.cards h4.media-heading {
+  padding-top: 10px;
+}
 .card-portlet {
   border-top: 6px solid #2DCFFA;
   background-color: #F1F1F1;
+}
+.card-portlet p,
+.card-portlet h1,
+.card-portlet h2,
+.card-portlet blockquote,
+.card-portlet ul {
+  padding: 10px 10px 0 10px;
+}
+.card-portlet p,
+.card-portlet cite {
+  color: #000;
+}
+.card-portlet h1.media-heading {
+  color: #093999;
 }
 .card-grau {
   background-color: #F1F1F1;
@@ -6884,11 +6969,48 @@ div.card-main {
 .card-blue {
   background-color: rgba(0, 149, 219, 0.1);
 }
+.card-blue:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5f4fb+0,cceaf8+100 */
+  background: #e5f4fb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e5f4fb 0%, #cceaf8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e5f4fb 0%, #cceaf8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e5f4fb 0%, #cceaf8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5f4fb', endColorstr='#cceaf8', GradientType=0);
+  /* IE6-9 */
+}
 .card-orange {
   background-color: rgba(243, 146, 0, 0.2);
 }
+.card-orange:hover {
+  background: #fef4e5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fef4e5 0%, #fde9cc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fef4e5 0%, #fde9cc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fef4e5 0%, #fde9cc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fef4e5', endColorstr='#fde9cc', GradientType=0);
+  /* IE6-9 */
+}
 .card-gelb {
   background-color: rgba(255, 204, 0, 0.1);
+}
+.card-gelb:hover {
+  background: #fffae5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fffae5 0%, #fff5cc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fffae5 0%, #fff5cc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fffae5 0%, #fff5cc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffae5', endColorstr='#fff5cc', GradientType=0);
+  /* IE6-9 */
 }
 .card-hover:last-child {
   border-bottom: 0px solid #FFF;
@@ -6917,27 +7039,20 @@ div.card-main {
 .line-cyan {
   background-color: #0095db;
 }
+.line-yellow {
+  background-color: #F8FF02;
+}
+.line-orange {
+  background-color: #f39200;
+}
 .row-bottom-margin {
   margin-bottom: 8px;
 }
 .title-border {
   height: 6px;
   width: 80px;
-}
-div.description {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  background-color: white;
-  color: #093999;
-  opacity: 0.6;
-  /* transparency */
-  filter: alpha(opacity=60);
-  /* IE transparency */
-}
-.description_content {
-  padding: 10px;
+  margin-left: 10px;
+  padding: 0 !important;
 }
 .col-sm-3,
 .col-sm-4,

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Kompakt – März 2016 - Nachrichten der DGUV</title>
+    <title>Kompakt – Mai 2016 - Nachrichten der DGUV</title>
 
     <!-- Bootstrap -->
-    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  
         
@@ -27,26 +27,36 @@
     <!--nav class="navbar navbar-default navbar-fixed-top"-->
     <nav class="navbar navbar-default navbar-fixed-top">
      <div class="container">
-  
+     <div class="wrapper-header">
+      <span class="col-sm-12 col-md-8" style="margin-top:10px;"><p>Nachrichten der Deutschen Gesetzlichen Unfallversicherung</p></span>
+     <div class="pull-right">
+        <ul class="list-inline">
+            <li style="padding-top:10px;"><a href="www.dguv.de"><img style="width: 120px;" src="assets/img/Logo-DGUV-RGB-short.svg" alt="Homepage – DGUV" title="Homepage – DGUV" /></a></li>
+          </ul>
+      </div>
+
+
+      <!--span class="col-sm-12 col-md-4" style="margin-top:10px;"><p class="pull-right" style="color:#093999;"><img src="assets/img/Logo-DGUV-RGB-short.svg"><strong>März 2016</strong></p></span-->
+
       <div class="col-sm-12 col-md-8">
         <div class="row flexbox">
-          <div class="col-xs-12 col-sm-6">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Nachrichten der DGUV</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <h1 class="header-title">Kompakt <span class="header-number"><sup>#3</sup></span></h1>
-          </div>
+
+       <div class="navbar-header">
+        <ul class="list-inline">
+            <li><a class="" href="index.html"><img style="margin-top:-14px;" src="assets/img/dguv-kompakt-logo.png" /></a></li>
+            <li style="vertical-align:top;color:#093999;"><strong>März 2016</strong></li>
+          </ul>
+      </div>
         </div>
       </div>
 
-     <div class="col-sm-12 col-md-4 ivz-navi"> 
+     <div class="col-sm-12 col-md-4 ivz-navi" style="padding-right: 0 !important"> 
      <div class="pull-right">
-      <ul class="navbar-nav list-inline">
-            <li><a class="btn btn-primary" href="article-02.html"><i class="fa fa-angle-left"></i> zurück</a></li>
+            <ul class="list-inline">
+            <li><a class="btn btn-primary" href="#contact">Archiv</a></li>
+            <li><a class="btn btn-primary" href="article-01.html"><i class="fa fa-angle-left"></i> zurück</a></li>
             <li><a class="btn btn-primary" href="index.html">Inhalt</a></li>
-            <li><a class="btn btn-primary" href="article-03.html">weiter <i class="fa fa-angle-right"></i></a></li>
+            <li><a class="btn btn-primary" href="article-02.html">weiter <i class="fa fa-angle-right"></i></a></li>
             <li> <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> <i class="fa fa-bars"></i> </button> </li>
           </ul>
       </div>
@@ -54,7 +64,7 @@
         <div class="collapse ivz" style="width:100%;float:left;" id="collapseExample" aria-expanded="false"> 
      <div class="col-sm-4"> 
      <ul class="list-unstyled">
-       <h2>Ausgabe Februar 2016</h2>
+       <h2>Ausgabe Juni 2016</h2>
   <li><a href="">Neues Positionspapier:Prävention der Zukunft <i class="fa fa-angle-right"></i></a></li>
   <li><a href="">Die neue BG Verkehr: Fusion zur neuen Berufsgenossenschaft <i class="fa fa-angle-right"></i></a></li>
 
@@ -73,16 +83,16 @@
    <li><a href="">Medienecke <i class="fa fa-angle-right"></i></a></li>
     <li><a href="">Termine <i class="fa fa-angle-right"></i></a></li>
     <li><a href="">Event <i class="fa fa-angle-right"></i></a></li>
-     <li><a href="">Kontakt <i class="fa fa-angle-right"></i></a></li>
+     <li><a href="kontakt.html">Kontakt <i class="fa fa-angle-right"></i></a></li>
 </ul>
      </div> 
      </div> 
+     </div><!-- END: wrapper-header -->
     </div><!-- END: container -->
   </nav>
-
     <!-- Begin page content -->
     <div class="container inhalt-wrapper">
-    <div class="inhalt-category thema">
+    <div class="inhalt-category topthema">
    <div class="col-md-6 col-md-offset-3">
     <div class="media description_content">  
         <div class="media-body">
@@ -138,22 +148,25 @@ Druck: DCM Druckcenter Meckenheim</dd>
 
     <footer class="footer">
       <div class="container">
+      <div class="col-xs-6">
        <ul class="nav navbar-nav">
         <li class="text-muted description_content">© Deutsche Gesetzliche Unfallversicherung</li>
         </ul>
-         <ul class="nav navbar-nav navbar-right">
+        </div>
+        <div class="col-xs-6">
+         <ul class="col-xs-6 nav navbar-nav navbar-right">
         <li class="col-sm-2"><a href="#"><img style=padding-top:10px; class="img-responsive" src="assets/img/dguv-logo.png"></a></li>
         </ul>
+        </div>
       </div>
     </footer>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-       <link href="assets/css/flexboxgrid.css" rel="stylesheet">
+    <link href="assets/css/flexboxgrid.css" rel="stylesheet">
   </body>
 </html>
