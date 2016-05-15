@@ -6854,6 +6854,7 @@ button.collapsed {
 .visual-heading,
 h4.media-heading {
   font-size: 36px;
+  font-weight: bold;
 }
 .twitter a {
   font-size: 20px;
@@ -6907,15 +6908,15 @@ div.description {
   padding: 10px 10px 0 10px;
 }
 a.description-content {
-  padding: 10px;
   color: #000;
 }
 .cards h1,
 .cards h2,
 .cards h3,
 .cards h4 {
-  padding: 0 10px;
+  padding: 10px 10px 0 10px;
   word-break: break-word;
+  font-weight: bold;
 }
 .cards p,
 .cards blockquote,
