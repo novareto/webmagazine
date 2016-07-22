@@ -6869,6 +6869,10 @@ h1.header-title {
 .wrapper-header {
   border-top: 4px solid #093999;
 }
+.main-logo {
+  width: 100%;
+  padding-top: 24px;
+}
 div.card-main {
   position: relative;
 }
@@ -6968,7 +6972,7 @@ a.description-content {
   /* IE6-9 */
 }
 .card-blue {
-  background-color: rgba(0, 149, 219, 0.1);
+  background-color: rgba(0, 140, 142, 0.4);
 }
 .card-blue:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5f4fb+0,cceaf8+100 */
