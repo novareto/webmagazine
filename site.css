@@ -6767,6 +6767,9 @@ body > .inhalt-wrapper,
 body > .cards-wrapper {
   padding: 120px 15px 0;
 }
+.ivz-navi {
+  padding-left: 0 !important;
+}
 .ivz {
   border-bottom: 6px solid #093999;
 }
@@ -6809,7 +6812,8 @@ body > .cards-wrapper {
   .media-right {
     display: block;
   }
-  .cards-wrapper {
+  .cards-wrapper,
+  .inhalt-wrapper {
     padding-top: 180px !important;
   }
 }
@@ -6868,6 +6872,14 @@ h1.header-title {
 }
 .wrapper-header {
   border-top: 4px solid #093999;
+}
+.header-logo {
+  float: right;
+}
+@media (max-width: 768px) {
+  .header-logo {
+    float: none;
+  }
 }
 .main-logo {
   width: 100%;
