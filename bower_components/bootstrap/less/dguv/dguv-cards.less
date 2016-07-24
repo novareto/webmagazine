@@ -117,6 +117,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffae5', end
   -webkit-box-shadow: inset #B3B3B3 0 -1px 0 0;
   box-shadow: inset #B3B3B3 0 -1px 0 0;
 }
+@media (max-width: 768px) {
+    .card-portlet {border-bottom: 8px solid white;}
+    }
+.teaser-hover {
+  cursor:pointer;
+  border-bottom: 1px solid #FFF;      
+  -moz-box-shadow: inset #B3B3B3 0 -1px 0 0;
+  -webkit-box-shadow: inset #B3B3B3 0 -1px 0 0;
+  box-shadow: inset #B3B3B3 0 -1px 0 0;
+  p {margin-bottom:21px;}
+}
+.teaser-hover:last-child {
+  border-bottom: 0px solid #FFF;      
+  -moz-box-shadow: inset #B3B3B3 0 0 0 0;
+  -webkit-box-shadow: inset #B3B3B3 0 0 0 0;
+  box-shadow: inset #B3B3B3 0 0 0 0;
+}
 .card-portlet-teaser:hover,
 .card-hover:hover {
   background:#f6f6f6;
@@ -131,5 +148,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffae5', end
 
 .category-border {height:6px;width:80px;}
 .title-border {height:6px;width:80px;margin-left:10px;}
- 
+.twitter-date {color:@gray-light;}
 
